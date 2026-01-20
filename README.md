@@ -1,2 +1,251 @@
-# Psychological-help
-поалгрлр
+<!DOCTYPE html>
+<html lang="kg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Психологиялык Жардам — Онлайн Платформа</title>
+  <meta name="description" content="Психологиялык колдоо көрсөтүүчү коопсуз онлайн платформа: кеңеш берүү, ресурстар, кризистик жардам, анонимдүү чат жана сеанстарды брондоо">
+  <style>
+    :root{--bg:#f7fbff;--card:#ffffff;--primary:#0a6fb2;--accent:#f6a800;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:Inter, Arial, sans-serif;background:var(--bg);margin:0;color:#0b1a2b}
+    header{background:linear-gradient(90deg,var(--primary),#0a4f7a);color:white;padding:28px 16px}
+    .wrap{max-width:1100px;margin:0 auto;padding:20px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:56px;height:56px;border-radius:10px;background:#fff;color:var(--primary);display:flex;align-items:center;justify-content:center;font-weight:700}
+    h1{margin:0;font-size:22px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+
+    nav{margin-top:12px;display:flex;gap:12px;flex-wrap:wrap}
+    nav a{color:white;text-decoration:none;padding:8px 12px;border-radius:8px;background:rgba(255,255,255,0.08)}
+
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:18px;margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(11,21,43,0.06)}
+
+    .quick-actions{display:flex;flex-direction:column;gap:12px}
+    .btn{display:inline-block;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:700;text-align:center}
+    .btn-primary{background:var(--primary);color:white}
+    .btn-ghost{background:#f1f5f9;color:var(--primary);border:1px solid rgba(10,111,178,0.08)}
+
+    section{margin:22px 0}
+    h2{color:var(--primary);margin:0 0 12px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .muted{color:var(--muted)}
+
+    .resource-list{display:flex;flex-direction:column;gap:10px}
+    .resource-item{display:flex;gap:12px;align-items:flex-start}
+    .resource-item .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:6px}
+
+    form input, form textarea, form select{width:100%;padding:10px;border-radius:8px;border:1px solid #d1d5db;font-size:15px}
+    form label{font-weight:600;font-size:14px}
+    .small{font-size:13px;color:var(--muted)}
+
+    footer{background:linear-gradient(90deg,var(--primary),#0a4f7a);color:white;padding:18px;margin-top:30px}
+
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.grid-3{grid-template-columns:repeat(2,1fr)} }
+    @media(max-width:520px){.grid-3{grid-template-columns:1fr}nav{display:flex;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">Ψ</div>
+        <div>
+          <h1>Психологиялык жардам — Онлайн платформа</h1>
+          <p class="lead">Коопсуз, анонимдүү жана профессионалдык колдоо — сен жалгыз эмессиң.</p>
+        </div>
+      </div>
+      <nav role="navigation" aria-label="Негизги меню" style="margin-top:12px">
+        <a href="#services">Кызматтар</a>
+        <a href="#chat">Анонимдүү чат</a>
+        <a href="#booking">Сеанстар</a>
+        <a href="#resources">Ресурстар</a>
+        <a href="#contact">Байланыш</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="card">
+        <h2>Көптөгөн колдоочу кызматтар</h2>
+        <p class="muted">Биз эмоционалдык колдоо, психологиялык консультациялар, топтук сессиялар жана кризистик жардам көрсөтөбүз. Бардык кеңештер лицензияланган адистер тарабынан жүргүзүлөт.</p>
+
+        <div style="margin-top:14px" class="grid-3">
+          <div class="card">
+            <h3>Жеке кеңеш</h3>
+            <p class="muted">Онлайн же офлайн форматта 50 мүнөттүк сеанстар.</p>
+          </div>
+          <div class="card">
+            <h3>Топтук сессиялар</h3>
+            <p class="muted">Стрессти башкаруу, өзүнө болгон ишенимди жогорулатуу.</p>
+          </div>
+          <div class="card">
+            <h3>Кризистик жардам</h3>
+            <p class="muted">Кыска мөөнөттүү колдоо, кооптуу абалда жардам көрсөтүү (ар бир учур үчүн аныктама жана жол-жоболор).</p>
+          </div>
+        </div>
+
+        <div style="margin-top:16px" class="quick-actions">
+          <a class="btn btn-primary" href="#chat">Анонимдүү чат баштоо</a>
+          <a class="btn btn-ghost" href="#booking">Сеанска жазылуу</a>
+          <a class="btn btn-ghost" href="#resources">Жедел ресурстар</a>
+        </div>
+
+      </div>
+
+      <aside class="card">
+        <h3>Коопсуздук жана купуялык</h3>
+        <p class="muted">Бул платформада байланыштар шифрленет; сен анонимдүү болушуң мүмкүн. Бардык кеңештер профессионалдар тарабынан жүргүзүлөт. Платформа медициналык диагноз коюу үчүн эмес — үнөмдүү колдоо көрсөтүү максатында түзүлгөн.</p>
+
+        <h4 style="margin-top:12px">Эгер кооптуу абалда болсоң</h4>
+        <p class="muted">Эгер азыркы учурда жашооңа же коопсуздугуңа коркунуч болсо, тийиштүү жергиликтүү тез жардам кызматтарына же кийинки өчүргүчкө дароо кайрыл: </p>
+        <ul class="small">
+          <li>Жергиликтүү тез жардам кызматтарын (мисалы: 102/103) же ыкчам номерлерди колдон.</li>
+          <li>Эгер мүмкүн болсо, жакын адамдан жардам сурап, коопсуз жерге бар.</li>
+        </ul>
+        <p class="small" style="margin-top:8px">(Маалымат: бул платформа медициналык талаптарды толук бере албайт. Ири кризистерде жергиликтүү адистерге кайрылуу зарыл.)</p>
+      </aside>
+    </section>
+
+    <section id="chat">
+      <h2>Анонимдүү чат</h2>
+      <div class="card">
+        <p class="muted">Кыска тексттик чатыбыз — түшүнүктүү жана ырайымдуу башталыш. Бул чаттын максаты — сенин сезимдериңди угуу жана дароо колдоо көрсөтүү. Эгер кеңири терапия керек болсо, мамиле коюуну сунуштайбыз.</p>
+
+        <!-- Бул блок серверге кошумча реализация талап кылат. Бул жайгашуу - фронтэнд үлгү -->
+        <div style="margin-top:12px;display:flex;flex-direction:column;gap:8px">
+          <input id="chat-name" type="text" placeholder="Аноним ат (милдеттүү эмес)">
+          <textarea id="chat-msg" rows="4" placeholder="Бул жерде билдирүүңдү жазыңыз..."></textarea>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-primary" onclick="startChat()">Жөнөтүү</button>
+            <button class="btn btn-ghost" onclick="clearChatInput()">Тазалоо</button>
+          </div>
+          <p id="chat-status" class="small muted"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking">
+      <h2>Сеанстарга жазылуу</h2>
+      <div class="card">
+        <p class="muted">Кеңешчилер менен жеке терапия үчүн убакыт брондоо. Бардык маалыматтар конфиденциалдуу сакталат.</p>
+        <form id="booking-form" onsubmit="event.preventDefault();bookSession();">
+          <label for="b-name">Атың</label>
+          <input id="b-name" type="text" required placeholder="Толук атыңыз">
+
+          <label for="b-email" style="margin-top:8px">Электрондук почта</label>
+          <input id="b-email" type="email" required placeholder="email@мисалы.kg">
+
+          <label for="b-service" style="margin-top:8px">Кызмат түрү</label>
+          <select id="b-service">
+            <option>Жеке кеңеш — 50 мүн</option>
+            <option>Топтук сессия — 90 мүн</option>
+            <option>Кризистик консультация — 30 мүн</option>
+          </select>
+
+          <label for="b-date" style="margin-top:8px">Келечектеги ыңгайлуу күн жана убакыт</label>
+          <input id="b-date" type="text" placeholder="мисалы: 2025-12-10 15:00">
+
+          <button class="btn btn-primary" type="submit" style="margin-top:12px">Брондоо</button>
+          <p id="booking-status" class="small muted" style="margin-top:8px"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="resources">
+      <h2>Ресурстар жана колдоо материалдары</h2>
+      <div class="card resource-list">
+        <div class="resource-item">
+          <div class="dot" aria-hidden></div>
+          <div>
+            <strong>Кыска медитациялар жана дем алуу көнүгүүлөрү</strong>
+            <p class="muted">Жөнөкөй 3-5 мүнөттүк ыкмалар күнүмдүк стрессти азайтууга жардам берет.</p>
+          </div>
+        </div>
+
+        <div class="resource-item">
+          <div class="dot"></div>
+          <div>
+            <strong>Стрессти башкаруу боюнча материалдар</strong>
+            <p class="muted">Жумуш, окуу жана жеке жашоодо балансты табуу боюнча кеңештер.</p>
+          </div>
+        </div>
+
+        <div class="resource-item">
+          <div class="dot"></div>
+          <div>
+            <strong> Жаштар үчүн колдоо </strong>
+            <p class="muted">Өзгөчө окуучу жана жаштарга багытталган программалар жана топтук тренингдер.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Байланыш жана суроо-жооп</h2>
+      <div class="card" style="display:grid;grid-template-columns:1fr 320px;gap:16px">
+        <div>
+          <p class="muted">Сизге кандай жардам керек экенин кыскача жазыңыз — биз 48 саат ичинде жооп беребиз.</p>
+          <form onsubmit="event.preventDefault();sendContact();">
+            <label>Атың (милдеттүү эмес)</label>
+            <input id="c-name" type="text" placeholder="Атыңыз">
+            <label style="margin-top:8px">Электрондук почта</label>
+            <input id="c-email" type="email" placeholder="email@мисалы.kg">
+            <label style="margin-top:8px">Кабарлама</label>
+            <textarea id="c-msg" rows="5" placeholder="Кыскача суроо же жагдай"></textarea>
+            <button class="btn btn-primary" style="margin-top:10px">Жөнөтүү</button>
+            <p id="contact-status" class="small muted" style="margin-top:8px"></p>
+          </form>
+        </div>
+        <aside>
+          <h4>Тез жардам маселелери</h4>
+          <p class="small muted">Эгер өзүңдү начар жана коркунучту сезсең — дароо жергиликтүү тез жардам же ишемдик кызматтарына кайрыл. Бул сайт — онлайн колдоо үчүн, тез жардам кызматтарынын ордун толтура албайт.</p>
+
+          <h4 style="margin-top:10px">Конфиденциалдуулук</h4>
+          <p class="small muted">Бардык жеке маалыматтар платформада шифрленип сакталат жана үчүнчү жактарга берилбейт.</p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>© Психологиялык жардам — Онлайн платформа</div>
+      <div class="small">Платформа медициналык диагноз үчүн эмес. Кризистик кырдаалда жергиликтүү тез жардамга кайрыл.</div>
+    </div>
+  </footer>
+
+  <script>
+    function startChat(){
+      var msg=document.getElementById('chat-msg').value.trim();
+      var status=document.getElementById('chat-status');
+      if(!msg){status.textContent='Билдирүү бош болбошу керек.';return}
+      status.textContent='Сендин билдирүүң кабыл алынды — адис жооп берет.';
+      document.getElementById('chat-msg').value='';
+    }
+
+    function clearChatInput(){document.getElementById('chat-msg').value='';document.getElementById('chat-status').textContent='';}
+
+    function bookSession(){
+      var name=document.getElementById('b-name').value.trim();
+      var email=document.getElementById('b-email').value.trim();
+      var status=document.getElementById('booking-status');
+      if(!name||!email){status.textContent='Атың жана почтаң керек.';return}
+      status.textContent='Сеанс брондолду — электрондук почта аркылуу ырастама жөнөтүлөт.';
+      document.getElementById('booking-form').reset();
+    }
+
+    function sendContact(){
+      var msg=document.getElementById('c-msg').value.trim();
+      var status=document.getElementById('contact-status');
+      if(!msg){status.textContent='Кабарлама бош болбош керек.';return}
+      status.textContent='Рахмат! Биз 48 сааттын ичинде байланышабыз.';
+      document.querySelector('form').reset();
+    }
+  </script>
+</body>
+
+</html>
